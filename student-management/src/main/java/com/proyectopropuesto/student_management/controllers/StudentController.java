@@ -46,8 +46,6 @@ public class StudentController {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Alumno no encontrado por email: " + email);
     }
 
-    //Crear alumno.
-
     /**
      * Solicitud tipo POST de creación de un alumno.
      * @param student Alumno a crear.
@@ -107,8 +105,6 @@ public class StudentController {
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Alumno no encontrado con ID: " + student.getID());
     }
-
-    //Eliminar un alumno
 
     /**
      * Eliminación de un alumno de la lista.
