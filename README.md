@@ -1,2 +1,3 @@
-# student-management
- Manejo de studiantes con Spring Boot
+# Student management
+ 
+  primeros pasos con Springboot mediante un sencillo proyeto de manejo de studiantes.
