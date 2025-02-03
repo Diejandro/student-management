@@ -54,8 +54,13 @@ public class StudentController {
     @PostMapping
     public ResponseEntity<Student> postStudent(@RequestBody Student student){
         students.add(student);
+        URI location = ServletUriComponentsBuilder
+            .fromCurrentRequest()
+            .path("/{email}")
+            .buildAndExpand(student.getEmail())
+            .toUri();
 
-        return ResponseEntity.ok(student);
+        return ResponseEntity.created(location).build();
     }
 
     /**
